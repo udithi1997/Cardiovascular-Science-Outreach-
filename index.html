@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Project Name</title>
+  <meta name="description" content="A student-run project website." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="#">Your Project</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#updates">Updates</a>
+        <a href="#resources">Resources</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Build something meaningful.</h1>
+      <p class="subtitle">
+        I’m a high school student building <strong>Your Project Name</strong> — a self-operated project focused on
+        <strong>your mission</strong>.
+      </p>
+      <div class="cta-row">
+        <a class="button" href="#about">What is this?</a>
+        <a class="button button-secondary" href="#updates">See progress</a>
+      </div>
+    </section>
+
+    <section id="about" class="card">
+      <h2>About the Project</h2>
+      <p>
+        Replace this with your story: what problem you noticed, why it matters, and how you’re solving it.
+      </p>
+
+      <div class="grid">
+        <div class="mini-card">
+          <h3>Problem</h3>
+          <p>What issue are you addressing?</p>
+        </div>
+        <div class="mini-card">
+          <h3>Solution</h3>
+          <p>What are you building or doing to help?</p>
+        </div>
+        <div class="mini-card">
+          <h3>Impact</h3>
+          <p>Who benefits, and how will you measure success?</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="updates" class="card">
+      <h2>Updates</h2>
+      <ul class="timeline">
+        <li>
+          <span class="date">Week 1</span>
+          <div class="item">
+            <strong>Project kickoff</strong>
+            <p>Goal, research plan, first prototype outline.</p>
+          </div>
+        </li>
+        <li>
+          <span class="date">Week 2</span>
+          <div class="item">
+            <strong>Prototype v1</strong>
+            <p>What you built + what you learned + next steps.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section id="resources" class="card">
+      <h2>Resources</h2>
+      <ul>
+        <li><a href="https://pages.github.com/" target="_blank" rel="noreferrer">GitHub Pages</a> (free hosting)</li>
+        <li><a href="https://developer.mozilla.org/" target="_blank" rel="noreferrer">MDN Web Docs</a> (HTML/CSS reference)</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+      <p class="small">Tip: use a school-safe email and avoid sharing your home address/phone.</p>
+    </section>
+
+    <footer class="footer">
+      <p class="small">© <span id="year"></span> Your Name • Built by a student</p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
